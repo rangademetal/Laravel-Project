@@ -1,8 +1,8 @@
 # Proiect
 
-Cunoastere framework ului laravel: https://www.youtube.com/watch?v=OB8jBvu8N34&t=14s
+Cunoastere framework-ului laravel: https://www.youtube.com/watch?v=OB8jBvu8N34&t=14s
 
-Instalarea frameworkului laravel pe linux https://www.youtube.com/watch?v=e_FlO_T9BmA
+Instalarea framework-ului laravel pe linux https://www.youtube.com/watch?v=e_FlO_T9BmA
 crearea unui nou proiect cu ajutorul  composer create-project --prefer-dist laravel/laravel project de pe https://laravel.com/docs/6.x
 
 crearea jocului foarfeca, hartie, piatra in PHP https://github.com/rangademetal/Proiect/blob/master/joc.php
