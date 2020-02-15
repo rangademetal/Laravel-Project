@@ -4,20 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Questionnaires extends Migration
+class CreateQuestionsTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-       public function up()
+    public function up()
     {
-        Schema::create('status', function (Blueprint $table) {
-            $table->Increments('id');
-            $table->integer('user_id')->unsigned();
-            $table->string('status');
-            $table->foreign('user_id')->references('id')->on('users');
+        Schema::create('questions', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class Questionnaires extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questionnaires');
+        Schema::dropIfExists('questions');
     }
 }

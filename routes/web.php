@@ -10,12 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Status;
 Route::get('/', function () {
-    return view('welcome');
+
+	$var = Status::all()->toArray();
+	return view('welcome', compact('var'));
 });
 
 Auth::routes();
 Route::get('/questionnaires/create','QuestionnaireController@create');
-Route::post('/questionnares','QuestionnaireController@store');
+Route::post('/questionnaires','QuestionnaireController@store');
+
+Route::get('istoric','QuestionnaireController@istoric');
+Route::get('top','QuestionnaireController@top');
+Route::get('/questionnaires/{status}','QuestionnaireController@show');
 Route::get('/home', 'HomeController@index')->name('home');

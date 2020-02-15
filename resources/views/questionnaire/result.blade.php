@@ -16,7 +16,6 @@
 
                     <a href="/questionnaires/create" class="btn btn-dark">Piatra, Hartie, Foarfeca</a>
                     <a href="/istoric" class="btn btn-dark">Istoric</a> 
-                    <a href="/top" class="btn btn-dark">Top</a> 
                 </div>
             </div>
         </div>

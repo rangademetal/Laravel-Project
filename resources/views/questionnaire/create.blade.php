@@ -7,21 +7,16 @@
             <div class="card">
                 <div class="card-header">Game</div>
                     <div class="card-body">
+                        <p></p>
                         <form action="/questionnaires" method="post">
                             @csrf
-
                             <div class="form-group">
-                                <label for="status">Status</label>
-                                <input type="text" name="status" class="form-control" placeholder="Enter status">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                @error('status')
-                                    <small class="text-danger"> {{ $message }}</small>
-                                @enderror
+                                <label>Alege:</label><br/>
+                                <label><input type="radio" name="status" value="foarfeca"/>Foarfeca</label><br/>
+                                <label><input type="radio" name="status" value="hartie"/>Hartie</label><br/>
+                                <label><input type="radio" name="status" value="piatra"/>Piatra</label><br/>
                             </div>
-
-                            <button type="submit" class="btn btn-primary">Send Status</button>
-
-
+                            <button type="submit" class="btn btn-dark">Send Status</button>
                         </form>
                     </div>               
                 </div>
