@@ -31,4 +31,4 @@ Afisarea din bazele de date https://www.youtube.com/watch?v=aKUZBhO4C60
 
 Pentru query-urile din baza de date am folosit https://laravel.com/docs/5.8/queries
 
-postman in laravel: https://www.youtube.com/watch?v=GxCcNhflZqw
+postman in laravel: https://docs.api.getpostman.com/?version=latest
