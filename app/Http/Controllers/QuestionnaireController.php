@@ -30,11 +30,11 @@ class QuestionnaireController extends Controller
 		if($var == $vect[$rand]) {
             $win ="Egalitate";
 		}
-		if($var == "hartie" && $vect[$rand] =="piatra" || $var == "foarfeca" && $vect[$rand] =="hartie") { 
+		if($var == "hartie" && $vect[$rand] =="piatra" || $var == "foarfeca" && $vect[$rand] =="hartie" || $var == "piatra" && $vect[$rand] =="foarfeca") { 
 			$isWin = true;
 			$win="Ai castigat";		
 		}
-		if($var == "piatra" && $vect[$rand] =="hartie" || $var == "hartie" && $vect[$rand] =="foarfeca") 
+		if($var == "piatra" && $vect[$rand] =="hartie" || $var == "hartie" && $vect[$rand] =="foarfeca" || $var == "foarfeca" && $vect[$rand] =="piatra") 
 			$win="Ai pierdut";
 		
     	$data['status'] = $win;

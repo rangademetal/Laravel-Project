@@ -24,3 +24,11 @@ Laravel 6 Beginner - e5 - Controllers: https://www.youtube.com/watch?v=98ChVWjI6
 Laravel Tutorial for Beginners - Database Connection & Create Table: https://www.youtube.com/watch?v=cptr7GdR_lc
 
 laravel 4 migration and schema foreign key products to categories concept: https://www.youtube.com/watch?v=219Doc7PCbc&t=97s
+
+Am urmarit acest tutorial pentru a incepe proiectul:https://www.youtube.com/watch?v=a5STZK4ZQz0&list=PLpzy7FIRqpGC8Jk6gyWdSVdxCVXZAsenQ&index=17
+
+Afisarea din bazele de date https://www.youtube.com/watch?v=aKUZBhO4C60
+
+Pentru query-urile din baza de date am folosit https://laravel.com/docs/5.8/queries
+
+postman in laravel: https://www.youtube.com/watch?v=GxCcNhflZqw
