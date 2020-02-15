@@ -18,10 +18,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
 Route::get('/questionnaires/create','QuestionnaireController@create');
 Route::post('/questionnaires','QuestionnaireController@store');
-
-Route::get('istoric','QuestionnaireController@istoric');
 Route::get('top','QuestionnaireController@top');
+Route::get('istoric','QuestionnaireController@istoric');
 Route::get('/questionnaires/{status}','QuestionnaireController@show');
+
 Route::get('/home', 'HomeController@index')->name('home');

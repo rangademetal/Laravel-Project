@@ -53,12 +53,17 @@ class QuestionnaireController extends Controller
     	return view('questionnaire.show');
     }
 
+
+    public function top() {
+        
+        $data['data'] = DB::table('statuses')->Select('name',DB::raw('count(status) as count'))->groupBy('name')->orderBy('count','DESC')->get();
+        // print_r($data);
+        return view('top',$data);
+
+    }
+
     public function istoric() {
     	$data['data'] = DB::table('statuses')->where('name', auth()->user()->name)->get();
     	return view('istoric', $data);
-    }
-    public function top() {
-        $data['data'] = DB::table('statuses')->select('name',count('status'))->get();
-  		return view('top',$data);
     }
 }

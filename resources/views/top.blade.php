@@ -8,16 +8,16 @@
                 <div class="card-header">Top</div>
 
                 <div class="card-body">
-                   @foreach($data as $value)
+                  @foreach($data as $value)
                     <table class="table">
                         <tr>
                             <td>{{ $value->name}}<td>
-                            <td>{{ $value->status}}<td>
+                            <td>{{ $value->count}}<td>
                               <br/>                              
                         </tr>
                     </table>
                     @endforeach
-                   
+
                 </div>
             </div>
         </div>
